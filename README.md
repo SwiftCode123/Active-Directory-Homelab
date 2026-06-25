@@ -33,31 +33,25 @@ The lab focuses on foundational Active Directory concepts including domain contr
 ### Virtual Machine Configuration
 
 #### VM 1: Domain Controller
-
-**Purpose:** Centralized authentication and domain management
-
 * CPU: 2 vCPUs
 * RAM: 4 GB
 * Storage: 40–50 GB
-* Network: Connected to shared virtual network
+* Network: Connected to `vmbr1` (Fully Isolated Network)
 * Operating System: Windows Server Evaluation
 
 #### VM 2: Domain-Joined Client
-
-**Purpose:** Workstation for user authentication and domain interaction
-
 * CPU: 2 vCPUs
 * RAM: 4–6 GB
 * Storage: 40–50 GB
-* Network: Connected to same network as Domain Controller
+* Network: Connected to `vmbr1` (Fully Isolated Network)
 * Operating System: Windows 10/11 Enterprise Evaluation
 
 ### Network Design
 
-* Shared virtual bridge network within Proxmox
-* Static IP addressing for both virtual machines
-* DNS services hosted on the Domain Controller
-* Internet access enabled for updates and software downloads
+* Isolated Virtual Bridge (`vmbr1`): A dedicated virtual switch inside Proxmox with no physical port attachment, isolating all AD traffic, DNS, and future simulation/security tools
+* Static IP Addressing: Both VMs will use static IPs within a dedicated private subnet assigned to the `vmbr1` interfaces
+* DNS Services: Primary DNS for all domain assets is hosted on the Domain Controller via `vmbr1`
+* Controlled Internet Access: Internet connectivity for updates and software downloads is restricted to a secondary interface (`vmbr0`) on the Domain Controller, ensuring the client remains fully isolated
 
 ### Project Objectives
 
