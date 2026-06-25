@@ -77,4 +77,3 @@ The lab focuses on foundational Active Directory concepts including domain contr
 * Create and manage organizational units (OUs)
 * Manage domain users and groups
 * Configure Group Policy Objects (GPOs)
-* Understand Windows authentication workflows
