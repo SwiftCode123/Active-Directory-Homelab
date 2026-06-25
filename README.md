@@ -76,7 +76,6 @@ The lab focuses on foundational Active Directory concepts including domain contr
 * Domain-joined Windows workstation
 * User and group administration capabilities
 * Group Policy management
-* Foundational enterprise lab environment
 
 ### Learning Outcomes
 
@@ -85,4 +84,3 @@ The lab focuses on foundational Active Directory concepts including domain contr
 * Manage domain users and groups
 * Configure Group Policy Objects (GPOs)
 * Understand Windows authentication workflows
-* Build a foundation for cybersecurity and system administration labs
