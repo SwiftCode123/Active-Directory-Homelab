@@ -53,24 +53,6 @@ The lab focuses on foundational Active Directory concepts including domain contr
 * DNS Services: Primary DNS for all domain assets is hosted on the Domain Controller via `vmbr1`
 * Controlled Internet Access: Internet connectivity for updates and software downloads is restricted to a secondary interface (`vmbr0`) on the Domain Controller, ensuring the client remains fully isolated
 
-### Project Objectives
-
-**Input**
-
-* Windows Server installation
-* Windows Client installation
-* Active Directory Domain Services deployment
-* Domain configuration
-* Client domain enrollment
-
-**Output**
-
-* Functional Active Directory domain
-* Domain Controller managing centralized authentication
-* Domain-joined Windows workstation
-* User and group administration capabilities
-* Group Policy management
-
 ### Learning Outcomes
 
 * Deploy and configure Active Directory Domain Services
