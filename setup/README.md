@@ -1,4 +1,4 @@
-# Setup
+<img width="911" height="569" alt="image" src="https://github.com/user-attachments/assets/7b6b0be2-c0b0-4211-8eec-a141035780e5" /># Setup
 - This part details about downloading and uploading the ISO, creating the Domain Controller and the Client VM
 
 ## Downloading the Windows Server 2025 ISO
@@ -92,3 +92,60 @@ Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 192.168.1
 
 <img width="1020" height="601" alt="image" src="https://github.com/user-attachments/assets/6781f681-b07c-4b9c-9f95-2bdf67b309ed" />
 
+- Then, I did a quick server name
+```
+Rename-Computer -NewName "DC01" -Restart
+```
+## Installing Active Directory Domain Service (AD DS)
+
+- I first clicked on `Manage` > `Add roles and features`
+
+<img width="911" height="572" alt="image" src="https://github.com/user-attachments/assets/69871347-74d6-41f6-a824-f9d5ac418880" />
+
+- I went with the default option
+
+<img width="912" height="569" alt="image" src="https://github.com/user-attachments/assets/93fce793-785f-4001-a472-c4ec07f5dcd9" />
+
+- Our server is already highlighted :D
+
+<img width="911" height="569" alt="image" src="https://github.com/user-attachments/assets/06382122-c156-4f72-8a4e-e19f50865aba" />
+
+- From the server roles, I selected AD DS
+
+<img width="1043" height="646" alt="image" src="https://github.com/user-attachments/assets/2124c8f2-6ca5-40e8-9cd9-22f5c3a36fe5" />
+
+- Click install
+
+<img width="1818" height="1136" alt="image" src="https://github.com/user-attachments/assets/89179d2d-64f9-4449-9f60-a3838ba16694" />
+
+- The installation has succeeded and now we can click the `Promote this server to a domain controller` link
+
+<img width="963" height="602" alt="image" src="https://github.com/user-attachments/assets/1a9526b9-0afb-4ef6-bd97-dbe868d2f9e8" />
+
+- Then, I created a new forest and named it `homelab.local`
+
+<img width="912" height="567" alt="image" src="https://github.com/user-attachments/assets/4a598e64-b8dd-4db4-a5af-ecb3854fe66b" />
+
+- We click continue since the box is greyed out anyways
+
+<img width="907" height="568" alt="image" src="https://github.com/user-attachments/assets/6f41915e-f520-45a1-8f49-a56baad3b738" />
+
+- The NetBIOS domain name is already filled for us
+
+<img width="912" height="568" alt="image" src="https://github.com/user-attachments/assets/09a2b1dc-e2af-4453-85c1-26ceb10cb70e" />
+
+- We see where our database logs are stored
+
+<img width="908" height="571" alt="image" src="https://github.com/user-attachments/assets/e697a0bc-98ae-4801-9112-58bca7e9cd64" />
+
+- Since all prerequisites pass, we click `Install`
+
+<img width="908" height="567" alt="image" src="https://github.com/user-attachments/assets/387ab34b-4bcb-4c62-a971-e69bea7ec680" />
+
+- Now, it has finished and logging in looks a bit different
+
+<img width="909" height="569" alt="image" src="https://github.com/user-attachments/assets/8fa94dc2-e9be-4257-816f-2ec0a2611e12" />
+
+- Once we login, we can see the `AD DS`, `DNS` and `File and Storage Services` on the left side
+
+<img width="916" height="576" alt="image" src="https://github.com/user-attachments/assets/761eba0a-bc3a-43c5-9038-de755aa68359" />
