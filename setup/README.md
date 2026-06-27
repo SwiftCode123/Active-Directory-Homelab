@@ -1,3 +1,4 @@
+# Setup
 - This part details about downloading and uploading the ISO, creating the Domain Controller and the Client VM
 
 ## Downloading the Windows Server 2025 ISO
