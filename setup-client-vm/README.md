@@ -78,6 +78,6 @@
 
 <img width="1031" height="644" alt="image" src="https://github.com/user-attachments/assets/ee3f37c0-791a-44ea-bd99-1d02d706459c" />
 
-- We can see I am succesful able to login as the standard local domain user
+- We can see I am succesfully able to login as the standard local domain user
 
 <img width="958" height="593" alt="image" src="https://github.com/user-attachments/assets/274d4822-64bc-486b-b296-eac50c84d45f" />
