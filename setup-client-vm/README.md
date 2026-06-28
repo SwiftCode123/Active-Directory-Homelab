@@ -46,3 +46,38 @@
 
 <img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/d1fd04c7-dafa-4523-b015-2aa32335de81" />
 
+- As a confirmation, I pinged the DC and we can see we received a successful reply :D
+
+<img width="958" height="597" alt="image" src="https://github.com/user-attachments/assets/acef4098-58cb-483f-b7c7-2e27050155ef" />
+
+- Now, we join the client VM to the domain `homelab.local`. First, I ran `sysdm.cpl` using `Win + R`. Then, I clicked `Change` at the bottom
+
+<img width="992" height="616" alt="image" src="https://github.com/user-attachments/assets/aa50101c-d0fc-4a2d-b5cb-1d797a11e061" />
+
+- I typed in the domain `homelab.local`
+
+<img width="960" height="599" alt="image" src="https://github.com/user-attachments/assets/6ab034d9-4ed6-4274-8237-587dc0fff0cc" />
+
+- Entered my username and password
+
+<img width="960" height="596" alt="image" src="https://github.com/user-attachments/assets/d6570978-71bd-4608-b787-9b0caaf0b17d" />
+
+- We can see it says a successful welcome message
+
+<img width="959" height="597" alt="image" src="https://github.com/user-attachments/assets/85c9734f-fa85-4981-8716-8222939b0488" />
+
+- Now, I restarted to let the changes take effect but once we get to this page, we don't login as the local account, instead I chose the `Other User` option
+
+<img width="1102" height="690" alt="image" src="https://github.com/user-attachments/assets/3ec2f1ec-4fb5-49e0-bfdb-a3543aa00451" />
+
+- We can see it says `Sign in to: HOMELAB`
+
+<img width="1097" height="681" alt="image" src="https://github.com/user-attachments/assets/b35ecd41-5e77-44a8-b96d-bf17ce55359f" />
+
+- Then, I signed in with the same username and password I created as the admin on the domain controller (created the `Jack` domain user)
+
+<img width="1031" height="644" alt="image" src="https://github.com/user-attachments/assets/ee3f37c0-791a-44ea-bd99-1d02d706459c" />
+
+- We can see I am succesful able to login as the standard local domain user
+
+<img width="958" height="593" alt="image" src="https://github.com/user-attachments/assets/274d4822-64bc-486b-b296-eac50c84d45f" />
