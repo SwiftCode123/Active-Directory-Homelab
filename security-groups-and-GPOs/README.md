@@ -54,3 +54,16 @@
 - Now, usually it takes 90 minutes for the GPOs to background refresh across a network and so we force the rules to be activated immediately via the `gpupdate /force` command. The message below was successful
 
 <img width="961" height="600" alt="image" src="https://github.com/user-attachments/assets/6be6b2f4-6592-4008-a39e-3ea0c6f316c3" />
+
+## Testing the configurations
+- I put on my hacker hat and tried to brute-force the password to get into Alisha's account >:D. I had her username, but was her password?. As you can see, I tried 3+ passwords, and now I am locked out... D:
+
+<img width="944" height="591" alt="image" src="https://github.com/user-attachments/assets/7918d57a-8e01-4b5c-a84b-1f4f1e88a48b" />
+
+- To troubleshoot this now, I had to back to my DC and unlock that specific account. We can see when I clicked on `Properties` on Alisha, it says the account was locked and I can unlock it by checking the box
+
+<img width="1138" height="709" alt="image" src="https://github.com/user-attachments/assets/eb81ed61-0774-4fb8-9eb6-483ebd39b216" />
+
+- I was successfully able to login to her account
+
+<img width="962" height="601" alt="image" src="https://github.com/user-attachments/assets/84775028-4f29-4879-8cb4-f87c7cb3bb48" />
