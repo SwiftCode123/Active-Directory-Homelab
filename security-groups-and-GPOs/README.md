@@ -79,3 +79,16 @@
 - I was successfully able to login to her account
 
 <img width="962" height="601" alt="image" src="https://github.com/user-attachments/assets/84775028-4f29-4879-8cb4-f87c7cb3bb48" />
+
+## Creating GPOs for IT
+- Let's create a new GPO for IT and this one is to disable the command prompt for the standard users so they can not run scripts or probe the network
+
+<img width="964" height="607" alt="image" src="https://github.com/user-attachments/assets/fe55e184-e12e-4915-a4c4-18d4186b2f14" />
+
+- Now, because this policy restricts user behavior, we will look inside the User Configuration folders. I navigated to the `System` folder and then found the setting for `Prevent access to the command prompt` and toggled it to be `Enabled`
+
+<img width="960" height="601" alt="image" src="https://github.com/user-attachments/assets/52a85e49-15a5-4b69-8604-79de088e89e3" />
+
+- We now test it on `Jack` and poor `Jack` is not able to access the command prompt
+
+<img width="961" height="599" alt="image" src="https://github.com/user-attachments/assets/3c4278b4-f5ff-4b7f-932d-e4253a2c9b9e" />
