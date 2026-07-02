@@ -92,3 +92,21 @@
 - We now test it on `Jack` and poor `Jack` is not able to access the command prompt
 
 <img width="961" height="599" alt="image" src="https://github.com/user-attachments/assets/3c4278b4-f5ff-4b7f-932d-e4253a2c9b9e" />
+
+## Security Filtering
+- Security filtering is an Active Directory feature used to target a Group Policy Object (GPO) to specific users, computers, or security groups. It works by modifying the GPO's permissions so that only members of the selected groups have the authority to read and apply the policy. This allows administrators to narrow down a policy's scope so it does not automatically apply to every object inside an Organizational Unit (OU)
+
+## Creating the Security filter
+- Let's say that `Harmony` is a manager and that `Jack` is not. We want `Harmony` to have access to the command prompt but `Jack` should not. For this, I created a new group called `CMD_Blocked_Users`. Then, I went to the properties tab and only added `Jack`
+
+<img width="962" height="599" alt="image" src="https://github.com/user-attachments/assets/78702444-90ce-4ff1-9abf-1270694e9b22" />
+
+- I then added the `CMD_Blocked_Users` GPO underneath the `Security Filtering` tab
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/42d9735a-5249-48d5-ad20-58cb6d06cf93" />
+
+- We can see here that poor `Jack` is not able to access the command still
+
+<img width="961" height="596" alt="image" src="https://github.com/user-attachments/assets/4ece1b44-3398-4d3d-a3f0-623818662bfd" />
+
+- However, `Harmony` can :D
+<img width="958" height="599" alt="image" src="https://github.com/user-attachments/assets/dd7555b6-250c-463f-8814-615073997100" />
