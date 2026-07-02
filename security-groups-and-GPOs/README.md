@@ -28,6 +28,18 @@
 
 <img width="961" height="599" alt="image" src="https://github.com/user-attachments/assets/c29d807c-f4c8-45c1-9253-68db2a686149" />
 
+## Testing the configurations
+- For testing purposes, let's create a shared folder named `IT_Secrets` and edit its permission properties. I right clicked and selected `Properties` > `Sharing` tab > `Advanced sharing` > checked the  `Share this folder` box > `Share permissions` where I removed everyone and only added the `IT Department`
+
+<img width="962" height="601" alt="image" src="https://github.com/user-attachments/assets/8d75b8c5-8bf9-44b9-86f8-0e317a0e5a7b" />
+
+- Then, I logged in as `Jack` and ran `192.168.1.200\\IT_Secrets` via the Run box (`Win + R`) and the folder was able to pop up for `Jack`
+
+ <img width="960" height="596" alt="image" src="https://github.com/user-attachments/assets/d77b1a10-ad67-45c9-9012-cf7fa399d005" />
+
+- However, `Alisha` was denied access because she is in the `HR Department` and not the `IT Department` which was assigned access to the shared folder
+<img width="949" height="601" alt="image" src="https://github.com/user-attachments/assets/2a2a54bc-c3e5-415a-bb80-0e47aa09aa70" />
+
 # Group Policy Objects (GPO)
 - After finish setting up the security group, lets make some GPOs and assign them to the OUs
 
